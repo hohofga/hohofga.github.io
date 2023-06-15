@@ -1,0 +1,67 @@
+/* SELECTORES */
+
+
+/* # denota un id */
+/* RECOMENDACION: no usar id */
+/* #negrita {
+  color: blue;
+} */
+
+
+/* el punto denota una clase */
+/* .color_rojo {
+  color: red;
+} */
+
+/* CTRL+/ crea un comentario con lo seleccionado*/
+
+
+/* BEM */
+/* 
+  BLOCK 
+  ELEMENT
+  MODIFIER 
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 0 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.nav_logo_image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.nav_links {
+  color: black;
+  font-size: 16px;
+  font-style: italic;
+  list-style: none;
+
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_links li a {
+  text-decoration: none;
+}
