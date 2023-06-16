@@ -23,6 +23,8 @@
   MODIFIER 
 */
 
+/* que es BOX-MODEL CSS */
+
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +34,9 @@
 body {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  background-color: lightblue;
 }
 
 .nav {
@@ -56,12 +60,31 @@ body {
   font-style: italic;
   list-style: none;
 
-  width: 600px;
+  min-width: 600px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0 20px;
 }
 
-.nav_links li a {
+.nav_links_button {
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 3px;
+  background-color: black;
+  box-shadow: 8px 11px 11px rgba(0, 0, 0, 0.3)  ; 
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+  opacity: 0.8;
+}
+
+.nav_links_button:hover {
+  transform: translate(-5px, -5px);
+  opacity: 1;
+}
+
+.nav_links_button a {
   text-decoration: none;
+  color: red;
+  font-size: 16px;
 }
