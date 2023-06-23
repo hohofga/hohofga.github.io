@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barra de navegacion</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <nav class="nav">
       <div class="nav_logo">
-        <img class='nav_logo_image' src="./logo.jpg" alt="logo de la empresa">
+        <img class="nav_logo_image" src="./logo.jpg" alt="logo de la empresa" />
       </div>
 
       <ul class="nav_links">
@@ -21,5 +25,33 @@
       </ul>
     </nav>
 
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img class='carousel_img' src="./logo.jpg" alt="imagen logo" />
+        </div>
+        <div class="swiper-slide">
+          <img class='carousel_img' src="./logo.jpg" alt="imagen logo" />
+        </div>
+        <div class="swiper-slide">
+          <img class='carousel_img' src="./logo.jpg" alt="imagen logo" />
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
   </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./swiper.js"></script>
 </html>
