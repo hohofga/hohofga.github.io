@@ -3,71 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Barra de navegacion</title>
+    <title>Sanidad Divina</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==
+     " crossorigin="anonymous" 
+     referrerpolicy="no-referrer" />
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <nav class="nav">
-      <div class="nav_logo">
-        <img class="nav_logo_image" src="./logo.jpg" alt="logo de la empresa" />
+    <div class="container">
+      <nav class="nav">
+        <div class="nav_logo">
+          <img
+            class="nav_logo_image"
+            src="./assets/logo.jpg"
+            alt="logo de la empresa"
+          />
+        </div>
+
+        <ul class="nav_links">
+          <li class="nav_links_button"><a href="#INICIO">INICIO</a></li>
+          <li class="nav_links_button">
+            <a href="#MINISTERIOS">MINISTERIOS</a>
+          </li>
+          <li class="nav_links_button"><a href="#VIDEOS">VIDEOS</a></li>
+          <li class="nav_links_button"><a href="#">DONACIONES</a></li>
+          <li class="nav_links_button"><a href="#">CONTACTO</a></li>
+        </ul>
+        
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="dropdown_menu">
+          <li class="nav_links_button"><a href="#INICIO">INICIO</a></li>
+          <li class="nav_links_button"><a href="#MINISTERIOS">MINISTERIOS</a></li>
+          <li class="nav_links_button"><a href="#VIDEOS">VIDEOS</a></li>
+          <li class="nav_links_button"><a href="#">DONACIONES</a></li>
+          <li class="nav_links_button"><a href="#">CONTACTO</a></li>
+          
+        </div>
+
+      </nav>
+      <script>
+          const toggle_btn = document.querySelector('.toggle_btn')
+          const toggleBTnIcon = document.querySelector('.toggle_btn i')
+          const dropDownMenu = document.querySelector('.dropdown_menu')
+
+          toggle_btn.onclick = function (){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBTnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+
+
+          }
+
+      </script>
+
+      <div class="contenedor_pastores">
+        <img
+          class="first_image"
+          src="./assets/pastores.jpg"
+          alt="foto de los pastores"
+        />
+        <p class="text_pastores">
+          A su debido tiempo, yo, el Señor, haré que esto suceda. Isaías 60:22
+        </p>
       </div>
 
-      <ul class="nav_links">
-        <li class="nav_links_button"><a href="#INICIO">INICIO</a></li>
-        <li class="nav_links_button"><a href="#MINISTERIOS">MINISTERIOS</a></li>
-        <li class="nav_links_button"><a href="#VIDEOS">VIDEOS</a></li>
-        <li class="nav_links_button"><a href="#">DONACIONES</a></li>
-        <li class="nav_links_button"><a href="#">CONTACTO</a></li>
-      </ul>
-    </nav>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              class="carousel_img"
+              src="./assets/sanmartin2.jpg"
+              alt="imagen sanmartin2"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="carousel_img"
+              src="./assets/sanmartin3.jpg"
+              alt="imagen sanmartin3"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="carousel_img"
+              src="./assets/sanmartin4.jpg"
+              alt="imagen sanmartin4"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="carousel_img"
+              src="./assets/evento1.jpg"
+              alt="imagen ninez1"
+            />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
-    <div class="contenedor_pastores">
-      <img class="first_image" src="./pastores.jpg" alt="foto de los pastores" />
-      <p class="text_pastores">A su debido tiempo, yo, el Señor, haré que esto suceda.
-        Isaías 60:22</p>
-    </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
 
-    <br>
-    <br>
-    <br>
-    <!-- Slider main container -->
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <img class='carousel_img' src="./sanmartin2.jpg" alt="imagen sanmartin2" />
-        </div>
-        <div class="swiper-slide">
-          <img class='carousel_img' src="./sanmartin3.jpg" alt="imagen sanmartin3" />
-        </div>
-        <div class="swiper-slide">
-          <img class='carousel_img' src="./sanmartin4.jpg" alt="imagen sanmartin4" />
-        </div>
-        <div class="swiper-slide">
-          <img class='carousel_img' src="./evento1.jpg" alt="imagen ninez1" />
-        </div>
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
     </div>
-
-
-
-
   </body>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./swiper.js"></script>
 </html>
+
+<!-- Mobile first
+celular => tablet => desktop
+
+media queries: 
+  Son codigo CSS que se encargan de detectar cierta propiedad (por ej el tamaño de la pantalla)
+  y en base a eso aplica ciertos estilos. -->
