@@ -366,7 +366,9 @@ body {
   }
   
   .contenedor_pastores {
-    width: 1440px;
+    align-items: center;
+  justify-content: center;
+    
   }
   .conteiner_mv {
    height: 2000px;
