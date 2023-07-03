@@ -269,10 +269,10 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 600px;
-  z-index: 5 ;
+  
+
   margin-top: auto;
-  margin-bottom: 120px;
+  margin-bottom: 250px;
   background-color: lightblue;
    
   border:4px solid grey;
@@ -294,7 +294,7 @@ body {
    justify-content:space-between;
    justify-content: center;
    align-items: center;
-   height: 500px;
+   height: 100%;
    width: 100%;
    font-size: 30px;
    border: 2px solid blue;
