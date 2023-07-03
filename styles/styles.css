@@ -270,6 +270,7 @@ body {
   align-items: center;
    
   position: relative;
+  height: auto;
   z-index: 5 ;
   margin-top: auto;
   margin-bottom: 120px;
@@ -293,10 +294,9 @@ body {
    flex-direction: column;
    justify-content:space-between;
    justify-content: center;
-  align-items: center;
-
-    font-size: 30px;
-    border: 2px solid blue;
+   align-items: center;
+   font-size: 30px;
+   border: 2px solid blue;
     
     }
   
@@ -305,6 +305,12 @@ body {
     text-align: center;
     background-color: lightblue;
     
+  }
+  .itemv iframe{
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
   }
 
 
