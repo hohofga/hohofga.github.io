@@ -134,8 +134,8 @@ body {
 }
 
 .swiper {
-  width: 444px;
-  height: 250px;
+  width: 100%;
+  height: auto;
   margin-bottom: 30px;
 }
 
@@ -375,8 +375,8 @@ body {
     
   }
   .swiper {
-    width: 889px;
-    height: 500px;
+    width: 100%;
+    height: auto;
   }
   .videosf{
     height: 700px;
