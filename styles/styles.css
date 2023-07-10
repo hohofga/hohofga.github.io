@@ -50,7 +50,7 @@ body {
   min-height: 100vh;
   margin: 0 auto;
   background-color: rgb(245, 239, 231) ;
-  border: 2px solid blue;
+  
 }
 
 .nav {
@@ -476,7 +476,7 @@ body {
     justify-content: space-around;
     align-items: center;
     gap: unset;
-    border: 1px solid red;
+    
   }
 
   .footer p {
