@@ -244,7 +244,8 @@ body {
   padding-bottom: 20px;
   background-color: rgb(216, 196, 182);
   font-size: 35px;
-  text-align: center;  
+  text-align: center;
+  border: 1px solid red;  
   }
 
    
@@ -261,8 +262,9 @@ body {
   
   .itemsede {
     display: flexbox;
+
     justify-content:space-between;
-    flex-basis: 47%;
+    flex-basis: 45%;
     width: 100%;
     height: auto;
     padding-left: 20px;
@@ -271,6 +273,13 @@ body {
    
     text-align: center;
     background-color: rgb(216, 196, 182);
+    }
+
+    .maps {
+       width: 350px;
+       height: 350px;
+       border: 1px solid black;
+         
     }
 
   
@@ -475,6 +484,17 @@ body {
     font-size: 30px;
       
     }
-}
+        
+    .maps {
+       width: 450px;
+       height: 500px;
+       border: 1px solid black;
+         
+    }
+
+  
+
+  }
+
 
 
