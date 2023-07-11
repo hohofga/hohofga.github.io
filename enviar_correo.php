@@ -5,7 +5,7 @@
   $email = $_POST['email'];
   $message = $_POST['mensaje'];
 
-  $header = 'From: ' , $email . "\r\n";
+  $header = 'From: ' . $email . "\r\n";
   $header .= "X-Mailer: PHP/" . phpversion() . "\r\n";
   $header .= "Mine-Version: 1.0 \r\n";
   $header .= "Content-Type: text/plain";
@@ -21,7 +21,7 @@
   $destinatario = "ffluna@gmail.com";
   $asunto = "Pedido de oración";
 
-  mail($destinatario, $asunto, utf8_decode($message), $header)
+  mail($destinatario, $asunto, utf8_decode($message), $header);
   
   header("Location:index.html");
 
