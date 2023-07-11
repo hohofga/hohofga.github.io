@@ -54,12 +54,14 @@ body {
 }
 
 .nav {
+  position: relative;
   display: flex;
   justify-content: center;
   gap: 0 50px;
   width: 100%;
   margin-top: 20px;
-}
+  z-index: 2;
+  }
 
 .nav_logo_image {
   width: 100px;
@@ -109,6 +111,7 @@ body {
   align-items: center;
   justify-content:space-between;
   height: 200px;
+  margin-top: 10px;
   border-radius: 8px;
   background-color:rgb(245, 239, 231);
 }
@@ -134,7 +137,7 @@ body {
 
 .nav_links_button a {
   text-decoration: none;
-  color: rgb(216, 196, 182);
+  color: rgb(245, 239, 231);
   font-size: 16px;
 }
 
@@ -173,7 +176,7 @@ body {
   }
 
   .dropdown_menu.open{
-    height: 240px;
+    height: 280px;
   }
 
   .dropdown_menu li{
@@ -198,9 +201,15 @@ body {
     display: none;
   }
   .nav .toggle_btn {
+    position: fixed;
+    top:0;
+    right: 0;
     display: block;
   }
   .dropdown_menu{
+      position: fixed;
+      top:0;
+
       display:block;
   }
 
@@ -210,7 +219,11 @@ body {
   .dropdown_menu{
     left:2rem;
     width: unset;
-
+  }
+  .nav_logo_{
+    position: fixed;
+    top: 0;
+    display: block;
   }
 }
 
@@ -231,18 +244,19 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
   width: 100%;
   height: auto;
 
   margin-bottom: 60px;  
- background-color: rgb(216, 196, 182);
+ background-color: rgb(245, 239, 231);
 }
 
 
 .titlesedes {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: rgb(216, 196, 182);
+  background-color: rgb(245, 239, 231);
   font-size: 35px;
   text-align: center;
    
@@ -272,7 +286,7 @@ body {
     padding-bottom: 20px;
    
     text-align: center;
-    background-color: rgb(216, 196, 182);
+    background-color: rgb(245, 239, 231);
     }
 
     .maps {
@@ -308,6 +322,8 @@ body {
   flex: 1;
   flex-direction: column;
   text-align: center;
+  padding-top: 1px;
+  padding-bottom: 100px;
   width: 100%;
   height: 1200px;
   margin-bottom: 30px;  
@@ -318,7 +334,7 @@ body {
   flex-basis: 50%;
   justify-content: center;
   align-items: center;
-  background-color: rgb(216, 196, 182);
+  background-color: rgb(245, 239, 231);
   height: 50px;
   font-size: 35px;
   }
@@ -333,7 +349,7 @@ body {
 .item {
   flex-basis: 50%;
   text-align: center;
-  background-color: rgb(216, 196, 182);
+  background-color: rgb(245, 239, 231);
   
 }
 
@@ -350,12 +366,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
-  
 
+  padding-bottom: 1px;
   margin-top: auto;
   margin-bottom: 50px;
-  background-color: rgb(216, 196, 182);
+  background-color: rgb(245, 239, 231);
  
 
  
@@ -363,19 +378,18 @@ body {
 }
 .titlev {
   display: flex;
-  background-color: rgb(216, 196, 182);
+  background-color: rgb(245, 239, 231);
   margin-bottom: 30px;
   height: 30px;
   font-size: 30px;
   }
 
   .videosf {
-   display: flex;
+   display: flexbox;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   height: 100%;
-   width: 100%;
+  
    font-size: 25px;
    
     
@@ -387,19 +401,16 @@ body {
     flex-direction: column;
     height: 100%;
     width: 100%;
-    margin-left:auto;
-    margin-right: auto;
+  
     text-align: center;
-    background-color: rgb(216, 196, 182);
+    background-color: rgb(245, 239, 231);
        
   }
 
   .itemv iframe{
-    
-    height: 100%;
-    width: 100%;
-    top:0px;
-    left:0px;
+   
+    height: 300px;
+    width: auto;
     }
 
 .ayuda_social {
@@ -407,6 +418,7 @@ body {
   flex-direction: column;
   justify-content: center;
   justify-items: center;
+  padding-bottom: 10px;
   font-size: 30px;
 }    
 
@@ -416,6 +428,7 @@ body {
 .ayuda_social img {
   max-width: 100%;
   height: auto;
+  
   margin-top: 10px;
 
   object-fit:contain;
@@ -433,8 +446,12 @@ body {
   margin-top: 30px;
 }
 
-.formulario h1 {
+.formulario p {
   font-size: 30px;
+}
+.enviar{
+  font-size: 25px;
+
 }
 
 .footer {
@@ -471,6 +488,40 @@ body {
 }
 
 @media only screen and (min-width: 576px) {
+
+
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0 50px;
+    width: 100%;
+    margin-top: 20px;
+    z-index: 2;
+    }
+    .contenedor_pastores {
+      display: flex;
+      align-items: center;
+      justify-content:space-between;
+      height: 200px;
+      margin-top: 150px;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      border-radius: 8px;
+
+      background-color:rgb(245, 239, 231);
+    }
+    .sectionSedes {
+     padding-top: 100px;
+      
+      
+     }
+     .sectionMinistries{
+      padding-top: 100px;
+     }
   .footer {
     flex-direction: row-reverse;
     justify-content: space-around;
@@ -496,13 +547,56 @@ body {
     width: 100%;
     height: auto;
   }
+     
+  
+.videos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  margin-top: auto;
+  background-color: rgb(245, 239, 231);
+  
+  
+}
+.titlev {
+  display: flex;
+  background-color: rgb(245, 239, 231);
+  margin-bottom: 30px;
+  height: 40px;
+  font-size: 30px;
+  }
+
   .videosf{
-    height: 700px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(245, 239, 231);
+    
   }
-  .itemv{
-    height: 700px;
+
+  .itemv {
+    display:flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(245, 239, 231);
+    
+       
   }
-  .ministries {
+  .itemv iframe{
+    width: auto;
+    height: 1000px;
+    background-color: rgb(245, 239, 231);
+ 
+    }
+  
+    .ministries {
     font-size: 30px;
       
     }
@@ -514,7 +608,26 @@ body {
          
     }
 
-  
+    .formulario {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      gap: 50px 0;
+      font-size:25px;
+     
+      margin-top: 30px;
+    }
+    
+    .formulario p {
+      font-size: 35px;
+    }
+  .enviar{
+    font-size: 25px;
+
+  }
 
   }
 

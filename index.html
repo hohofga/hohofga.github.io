@@ -36,13 +36,12 @@
         </div>
 
         <ul class="nav_links">
-          <li class="nav_links_button"><a href="#INICIO">INICIO</a></li>
-          <li class="nav_links_button">
-            <a href="#MINISTERIOS">MINISTERIOS</a>
-          </li>
-          <li class="nav_links_button"><a href="#" onclick="scrollToDiv('govideos')">VIDEOS</a></li>
-          <li class="nav_links_button"><a href="#">AYUDA SOCIAL</a></li>
-          <li class="nav_links_button"><a href="#">CONTACTO</a></li>
+          <li class="nav_links_button"><a href="#inicio">INICIO</a></li>
+          <li class="nav_links_button"><a href="#location">UBICACION</a></li>
+          <li class="nav_links_button"><a href="#ministries">MINISTERIOS</a></li>
+          <li class="nav_links_button"><a href="#videos">VIDEOS</a></li>
+          <li class="nav_links_button"><a href="#ayuda_social">AYUDA SOCIAL</a></li>
+          <li class="nav_links_button"><a href="#contacto">CONTACTO</a></li>
         </ul>
         
         <div class="toggle_btn">
@@ -50,11 +49,12 @@
         </div>
 
         <div class="dropdown_menu">
-          <li class="nav_links_button"><a href="#INICIO">INICIO</a></li>
-          <li class="nav_links_button"><a href="#MINISTERIOS">MINISTERIOS</a></li>
-          <li class="nav_links_button"><a href="#VIDEOS">VIDEOS</a></li>
-          <li class="nav_links_button"><a href="#">AYUDA SOCIAL</a></li>
-          <li class="nav_links_button"><a href="#">CONTACTO</a></li>
+          <li class="nav_links_button"><a href="#inicio">INICIO</a></li>
+          <li class="nav_links_button"><a href="#location">UBICACION</a></li>
+          <li class="nav_links_button"><a href="#ministries">MINISTERIOS</a></li>
+          <li class="nav_links_button"><a href="#videos">VIDEOS</a></li>
+          <li class="nav_links_button"><a href="#ayuda_social">AYUDA SOCIAL</a></li>
+          <li class="nav_links_button"><a href="#contacto">CONTACTO</a></li>
           
         </div>
 
@@ -74,8 +74,8 @@
           }
       </script>
 
-      <div class="contenedor_pastores">
-        <img
+      <div class="contenedor_pastores" id="inicio">
+      <img
           class="first_image"
           src="./assets/pastores.jpg"
           alt="foto de los pastores"
@@ -83,6 +83,7 @@
         <p class="text_pastores">
           Dios hace milagros. Dios tiene un plan para tu vida. Solo El puede transformarlo todo.
         </p>
+        
       </div>
 
       <!-- Slider main container -->
@@ -125,7 +126,7 @@
         <div class="swiper-scrollbar"></div>
       </div> 
 
-      <section class="sectionSedes">
+      <section class="sectionSedes" id="location">
         <div class="titlesedes">LOS ESPERAMOS</div>
         <div class="sedes">
           <div class="itemsede">
@@ -190,7 +191,7 @@
           <div class="itemv">
             <p>Domingo 2 de Julio-Santa Cena</p>
             <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fsanidaddivina.iglesiacristiana%2Fvideos%2F1232447780807184%2F&show_text=false&width=560&t=0" 
-            width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe> 
+           style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe> 
           
             </div>
    
@@ -205,7 +206,7 @@
       </div>
       </section>
 
-      <section class="ayuda_social">
+      <section class="ayuda_social" id="ayuda_social">
         <p> AYUDA SOCIAL</p>
         <img src="./assets/COMEDOR.jpg" alt="Imagen 1">
       </section>
@@ -213,8 +214,8 @@
     
 
 
-      <section class="formulario">
-        <h1>¿Tenés un pedido de oración?</h1>
+      <section class="formulario" id="contacto">
+        <p>¿Tenés un pedido de oración?</p>
       
         <form action="./enviar_correo.php" method="POST">
           <label for="nombre">Nombre:</label>
@@ -229,9 +230,11 @@
           <label for="mensaje">Pedido de oración:</label><br>
           <textarea id="mensaje" name="mensaje" rows="4" cols="30" required></textarea><br><br>
       
-          <input type="submit" value="Enviar">
+          <input  type="submit" class="enviar" value="Enviar">
         </form>
       </section>
+
+
       <footer class="footer">
         <div class="footer_images">
           <img src="./assets/logo_fb.png" alt="logo facebook">
