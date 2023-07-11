@@ -10,7 +10,7 @@
   $header .= "Mine-Version: 1.0 \r\n";
   $header .= "Content-Type: text/plain";
 
-  $message = "Este mensaje fue enviado por: " . $name . "\r\n";
+  $message = "Este mensaje fue enviado por: " . $nombre . "\r\n";
   $message = "Su apellido es: " . $apellido . " \r\n";
   $message = "Su mail es: " . $email . " \r\n";
   $message = "Su pedido de oración es: " . $mensaje . " \r\n";
