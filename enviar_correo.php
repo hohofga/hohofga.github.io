@@ -1,25 +1,28 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $nombre = $_POST["nombre"];
-  $apellido = $_POST["apellido"];
-  $email = $_POST["email"];
-  $mensaje = $_POST["mensaje"];
 
+  $nombre = $_POST['nombre'];
+  $apellido = $_POST['apellido'];
+  $email = $_POST['email'];
+  $mensaje = $_POST['mensaje'];
+
+  $header = 'From: ' , $email . "\r\n";
+  $header .= "X-Mailer: PHP/" . phpversion() . "\r\n";
+  $header .= "Mine-Version: 1.0 \r\n";
+  $header .= "Content-Type: text/plain";
+
+  $message = "Este mensaje fue enviado por: " . $name . "\r\n";
+  $message = "Su apellido es: " . $apellido . " \r\n";
+  $message = "Su mail es: " . $email . " \r\n";
+  $message = "Su pedido de oración es: " . $mensaje . " \r\n";
+  $message = "Enviado el: " . date('d/m/Y', time());
+
+
+ 
   $destinatario = "ffluna@gmail.com";
-  $asunto = "Mensaje de contacto";
+  $asunto = "Pedido de oración";
 
-  $contenido = "Nombre: $nombre\n";
-  $contenido .= "Apellido: $apellido\n";
-  $contenido .= "Email: $email\n";
-  $contenido .= "Mensaje: $mensaje\n";
+  mail($destinatario, $asunto, utf8_decode($message), $header)
+  
+  header("Location:index.html");
 
-  $headers = "From: $email\n";
-  $headers .= "Reply-To: $email\n";
-
-  if (mail($destinatario, $asunto, $contenido, $headers)) {
-    echo "El mensaje se ha enviado correctamente.";
-  } else {
-    echo "Error al enviar el mensaje.";
-  }
-}
 ?>
