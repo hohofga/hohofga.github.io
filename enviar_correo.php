@@ -3,7 +3,7 @@
   $nombre = $_POST['nombre'];
   $apellido = $_POST['apellido'];
   $email = $_POST['email'];
-  $mensaje = $_POST['mensaje'];
+  $message = $_POST['mensaje'];
 
   $header = 'From: ' , $email . "\r\n";
   $header .= "X-Mailer: PHP/" . phpversion() . "\r\n";
