@@ -112,10 +112,11 @@ body {
   justify-content:space-between;
   height: 200px;
   margin-top: 10px;
+  margin-bottom: 30px;
  
   border-radius: 8px;
   background-color:rgb(245, 239, 231);
-  border: 1px solid red;
+  
 }
 
 .first_image {
@@ -135,7 +136,46 @@ body {
   
 
 }
+.parrafos {
+  display: flex;
+ 
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items: center;
 
+ 
+  margin-right: auto;
+  margin-left: auto;
+  
+  height: auto;
+  font-size: 20px;
+
+}
+
+.izquierda {
+  padding: 3px 3px;
+ 
+  text-align: center; 
+ 
+ 
+  width: auto;
+  height:auto;
+  
+}
+
+.derecha {
+  
+
+  padding: 3px 3px;
+  text-align: center;
+
+  
+  width: auto;
+  height: auto;
+ 
+}
 
 .nav_links_button a {
   text-decoration: none;
@@ -146,8 +186,8 @@ body {
 .swiper {
   width: 100%;
   height: auto;
-  padding-top: 40px;
-  margin-bottom: 30px;
+  padding-top: 5px;
+ 
 }
 
 .swiper-button-next, .swiper-button-prev {
